@@ -1,0 +1,29 @@
+page-loading {
+
+  .loading-content {
+    font-family: 'Open Sans', sans-serif;
+    background-color: map-get($colors, 'dark') !important;
+
+    .wrapper{
+      height:100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      ion-card{
+        text-align: center;
+        margin-bottom:70px;
+
+        h3{
+          font-weight:200;
+          font-size:20px;
+          text-align: center;
+        }
+
+        ion-spinner{
+          width: 70px;
+        }
+      }
+    }
+  }
+}

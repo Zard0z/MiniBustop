@@ -1,0 +1,26 @@
+<ion-content class="home-content">
+  <div class="wrapper">
+    <div class="params-box">
+      <h3 class="home-title">Mini<span>Bus</span></h3>
+      <ion-card>
+        <ion-list>
+          <ion-item inset>
+            <ion-input placeholder="Ville" type="text" (focus)="selectCity()" readonly [(ngModel)]="city" name="city" required></ion-input>
+          </ion-item>
+
+          <ion-item inset>
+            <ion-input placeholder="Ligne" type="text" (focus)="selectBus()" readonly [(ngModel)]="bus" name="bus" required></ion-input>
+          </ion-item>
+
+          <ion-item inset>
+            <ion-input placeholder="Arrêt" type="text" (focus)="selectStop()" readonly [(ngModel)]="stop" name="stop" required></ion-input>
+          </ion-item>
+        </ion-list>
+      </ion-card>
+      <div class="validate">
+        <button ion-button round color="secondary" (click)="presentLoadingDefault()">Valider</button>
+      </div>
+    </div>
+  </div>
+
+</ion-content>
